@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".MainActivity">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#99FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/home_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@drawable/box_bg"
+            android:contentDescription="@string/cd_home_button"
+            android:padding="8dp"
+            android:src="@drawable/ic_home"
+            app:tint="#4CAF50" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="2.2"
+            android:gravity="center"
+            android:text="@string/smart_parking_hint"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/search_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@drawable/box_bg"
+            android:contentDescription="@string/cd_search_button"
+            android:padding="8dp"
+            android:src="@drawable/ic_search"
+            app:tint="#2196F3" />
+    </LinearLayout>
+
+    <!-- Parking Area -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/parking_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar"
+        android:layout_below="@+id/top_bar"
+        android:padding="4dp" />
+
+
+    <!-- Bottom Bar -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#99FFFFFF"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/location_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/location_label"
+            android:textColor="#FF9800"
+            app:drawableTopCompat="@drawable/ic_location"
+            app:drawableTint="#FF9800" />
+
+        <TextView
+            android:id="@+id/middle_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_label"
+            android:textColor="#F44336"
+            app:drawableTopCompat="@drawable/ic_middle"
+            app:drawableTint="#F44336" />
+
+        <TextView
+            android:id="@+id/profile_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/profile_label"
+            android:textColor="#9C27B0"
+            app:drawableTopCompat="@drawable/ic_profile"
+            app:drawableTint="#9C27B0" />
+    </LinearLayout>
+
+</RelativeLayout>
