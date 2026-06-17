@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1048977423566",
+    "firebase_url": "https://smartparking-90d2b-default-rtdb.firebaseio.com",
+    "project_id": "smartparking-90d2b",
+    "storage_bucket": "smartparking-90d2b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048977423566:android:4f14cca89b35ce3cdb249f",
+        "android_client_info": {
+          "package_name": "com.pavani.smart_parking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048977423566-tbua25ktu4vlk34hkpvoqeqm2ukje3fu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pavani.smart_parking",
+            "certificate_hash": "db9815ba0c6c901712eb6d223d701c955dbefcde"
+          }
+        },
+        {
+          "client_id": "1048977423566-53qu0escfpi24dj21ajs57rb6bqj4k1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQrQKtwxehbFxdqub69_qRRoOMjK0KCzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048977423566-53qu0escfpi24dj21ajs57rb6bqj4k1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
